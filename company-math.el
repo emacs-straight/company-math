@@ -80,7 +80,7 @@ in a new Emacs session."
       (psup (when company-math-superscript-prefix
               (concat "\\|" (regexp-quote company-math-superscript-prefix)))))
   (setq company-math--unicode-prefix-regexp
-        (concat "\\(" psym psub psup "\\)[^ \t\n]*")))
+    (concat "\\(" psym psub psup "\\)[^ \t\n]*")))
 
 (defcustom company-math-allow-unicode-symbols-in-faces t
   "List of faces to allow the insertion of Unicode symbols.
